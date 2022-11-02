@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/4a87bade47.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/phone.css" >
+    <link rel="stylesheet" href="styles/desktop.css" media="(min-width:375px)">
+    
+    <title>Rest Countries</title>
+</head>
+<body>
+    <div class="contryApp">
+        <header class="header">
+            <p id="title">Where in the world?</p>
+            <div class="config_theme">
+                <i id="theme" class="fa-solid fa-sun" id="sun"></i>
+                <p id="text_theme">Light Mode</p>
+            </div>
+        </header>
+    
+        <div class="contenedor">
+            <section class="all">
+                <div class="content_more">
+                        <div class="search">
+                            <button type="submit" form="nameform"><i id="search_contry" class="fa-solid fa-magnifying-glass"></i></button>
+                            <form id="nameform">
+                                <input type="text" name="contry" class="content_search" placeholder="Search for a contry...">
+                            </form>
+                        </div>
+                   
+                    <div class="region">
+                        <ul>
+                            <li><a href="#">Filter by Region</a>
+                                <ul id="list_contries">
+                                    <li class="allContries"><a href="#">All</a></li>
+                                    <li class="africa"><a href="#">Africa</a></li>
+                                    <li class="america"><a href="#">America</a></li>
+                                    <li class="asia"><a href="#">Asia</a></li>
+                                    <li class="europe"><a href="#">Europe</a></li>
+                                    <li class="oceania"><a href="#">Oceania</a></li>
+                                </ul>
+                            </li>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </ul>
+                    </div>
+                </div>
+        
+                <section class="contries"></section>
+            </section>
+    
+            <section class="detail">
+                <button id="back">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <p>Back</p>
+                </button>
+    
+                <div class="info_detail">
+                </div>
+            </section>
+            
+        </div>
+    </div>
+    <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <script type="module" src="./app/app.js"></script>
+</body>
+</html>

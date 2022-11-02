@@ -1,0 +1,84 @@
+.header{
+    justify-content: space-between;
+}
+
+.header #title, .config_theme{
+    margin: 0 40px;
+}
+
+.content_more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content_more .search{
+    width: 400px;
+    height: 40px;
+}
+
+.content_more input{
+    width: 332px;
+    height: 40px;
+}
+
+.all .contries{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+
+.detail .info_detail{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.info_detail .content_flag{
+    width: 100%;
+}
+
+.info_detail .content_flag img{
+    width: 550px;
+    height: 300px;
+}
+
+.info_detail .more_info{
+    display: grid;
+    width: 100%;
+    height: 310px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 20% 50% 30%;
+    grid-template-areas: "name name"
+                         "geography others"
+                         "borders borders";
+}
+
+.more_info h2{
+    grid-area: name;
+    
+}
+
+.more_info .info__geography{
+    grid-area: geography;
+}
+
+.more_info .info_others{
+    grid-area: others;
+}
+
+.more_info .info__borderContries{
+    grid-area: borders;
+    display: flex;
+    align-items: center;
+}
+
+.info__borderContries .borders{
+    margin-top: 20px;
+    width: 500px;
+    /* justify-content: center; */
+}
+
+
+
