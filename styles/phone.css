@@ -76,7 +76,7 @@ li{
     /* text-align: center; */
 }
 
-.contenedor .all{
+.contenedor .show_contries{
     width: 100%;
     z-index: 3;
 }
@@ -247,6 +247,10 @@ li{
     color: var(--lightText);
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
 
+}
+
+.card:hover{
+    cursor: pointer;
 }
 
 .card .flag{

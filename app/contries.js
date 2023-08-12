@@ -17,10 +17,9 @@ export default class Contries{
     }
 
 
-    showcontries(){
-
+    showcontry(){
         return `
-        <div class="card">
+        <div class="card" data-contry=${this.name.common}>
             <div class="flag">
                 <img src="${this.flags.png}" alt="${this.name.common}">
             </div>
